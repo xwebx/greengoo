@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GREEN-GOO</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #carousel-container {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .float {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+
+  .float:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .social-button {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <h1>Minimarket Green Goo</h1>
+  </header>
+
+  <div id="carousel-container">
+    <div id="carousel">
+      <div><img src="imagen1.jpg" alt="Imagen 1"></div>
+      <div><img src="imagen2.jpg" alt="Imagen 2"></div>
+      <div><img src="imagen3.jpg" alt="Imagen 3"></div>
+    </div>
+  </div>
+
+  <center>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1691979469923!6m8!1m7!1sCA5htFe5ThMG2beuHpKrCA!2m2!1d-35.43814723194242!2d-71.67037605077796!3f223.53383263542386!4f0.3982999204025788!5f0.7820865974627469" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </center>
+
+  <a href="https://api.whatsapp.com/send?phone=56956479170&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Green-Goo." class="float" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>Publicidad para tu negocio:</p>
+    <a href="https://www.facebook.com/profile.php?id=100094975971882" class="social-button">Informate Aqui</a>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#carousel').slick({
+      dots: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+  });
+</script>
+</body>
+</html>
+
